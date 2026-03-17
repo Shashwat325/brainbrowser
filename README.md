@@ -56,7 +56,15 @@ To set up WSL:
    $ ln -s ../../src/brainbrowser examples/js/brainbrowser
 ```
 
-7. Now run all the setup commands provided above inside the WSL terminal.
+7. Now run all these commands in the WSL terminal:
+   ```Shell
+  $ git clone https://github.com/aces/brainbrowser.git
+  $ npm install --legacy-peer-deps
+  $ npm install -g grunt-cli
+  $ grunt compile
+  $ npm install -g nano-server
+  $ nano-server 5000 examples
+```
 
 
 Note that [nano-server](https://www.npmjs.org/package/nano-server) is recommended because it can send **gzip** compressed versions of requested files. If a server without this functionality is used, files in **brainbrowser/examples/models/** and **brainbrowser/examples/color-maps/** will have to be **gunzipped**.
