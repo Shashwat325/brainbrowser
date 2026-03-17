@@ -57,7 +57,7 @@ To set up WSL:
 ```
 
 7. Now run all these commands in the WSL terminal:
-   ```Shell
+```Shell
   $ git clone https://github.com/aces/brainbrowser.git
   $ npm install --legacy-peer-deps
   $ npm install -g grunt-cli
